@@ -44,6 +44,47 @@
 		font-family: verdana;
 		font-size: 16px;
 	}
+	/* Dropdown Button */
+	.dropbtn {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 16px;
+	  font-size: 16px;
+	  border: none;
+	}
+
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: #ddd;}
+
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {display: block;}
+
+	/* Change the background color of the dropdown button when the dropdown content is shown */
+	.dropdown:hover .dropbtn {background-color: #3e8e41;}
 	</style>
 	</head>
 	<body>
@@ -51,22 +92,19 @@
 			<li><img align="right" src="udlogo.jpg" alt="ud logo" width="50" height="50"></li>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="peoplepage.html">People</a></li>
-			<li><a href="publications.html">Pblications</a></li>
 		</ul>
-		<h1>People</h1>
-		<h2>Faculty</h2>
-		<h3>Haining Wang</h3>
-		<img src="wang.jpg" alt="Dr. Wang" width="182" height="227">
-		<p> Prof. Wang joined UD ECE in fall 2014 as part of the new cybersecurity research group. His research interests lie in the areas of security, networking systems, cloud computing, mobile computing, and cyber-physical systems. The main thrusts of his current and past research include energy/power attacks and countermeasures inside data centers, covert channel attacks and countermeasures in the cloud, behavioral biometric-based user authentication, automatic online bot detection, transparent anti-phishing and countering distributed denial-of-service attacks.</p>
 		
-		<h2>Graduate Student</h2>
-		<h3>Teague Forren</h3>
-		<img src="teague.jpg" alt="Teague" width="200" height="295">
-		<p>Teague is a 2nd year cyber security PhD student at University of Delaware.</p>
+		<div class="dropdown">
+		<button class="dropbtn">Dropdown</button>
+			<div class="dropdown-content">
+    				<a href="michaelg.html">Michael Guerrero</a>
+    				<a href="michaelf.html">Michael Figura</a>
+   				<a href="jason.html">Jason Anderson</a>
+				<a href="shane.html">Shane McGovern</a>
+  			</div>
+		</div>
 		
-		<h2>Undergraduate Student</h2>
-		<h3>Michael Guerrero</h3>
-		<img src="michael.png" alt="Michael Guerrero" width="200" height="200">
-		<p>Michael is a Junior at the University of Delaware working towards attaining his B.S. in Computer Engineering with a double minor in Computer Science and CyberSecurity.</p>
+		<h1>Team Progress</h1>
+		<h2>Soon to come</h2>
 	</body>
 </html>
