@@ -41,25 +41,70 @@
 		font-family: verdana;
 		font-size: 16px;
 	}
+		/* Dropdown Button */
+	.dropbtn {
+	  background-color:  #00539F;
+	  color: white;
+	  padding: 0;
+	  font-size: 16px;
+	  border: none;
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+	  border: double;
+	  background-color: #00539F;
+	  color: white;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: #FFD200;}
+
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {display: block;}
+
+	/* Change the background color of the dropdown button when the dropdown content is shown */
+	.dropdown:hover .dropbtn {background-color: #00539F;}
 	</style>
 	</head>
 	<body>
 		<ul>
 			<li><img align="right" src="udlogo.jpg" alt="ud logo" width="50" height="50"></li>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="peoplepage.html">People</a></li>
+			<li class="dropdown">
+				<button class="dropbtn"><a href="peoplepage.html">Team</a></button>
+				<div class="dropdown-content">
+					<a href="michaelg.html">Michael Guerrero</a>
+					<a href="michaelf.html">Michael Figura</a>
+					<a href="jason.html">Jason Anderson</a>
+					<a href="shane.html">Shane McGovern</a>
+				</div>
+			</li>
 		</ul>
 		<h1>Icarus Solar Senior Capstone Project</h1>
 		<h3>Description of Project</h3>
 		<p>Our group aims to create a portable, off-grid solar generator that includes an interface that will allow it to be controlled/monitored by any device.</p>
-		<h3>Objectives</h3>
+		<img src="Block Diagram.png" alt="Block Diagram" width="400" height="200">
 		<p>We are going to create a solar generator that can harness and store its own energy. We also plan to create an interface that will allow us to control this remotely. The mission of our project is to be able to provide clean, renewable energy efficiently on the go. Here at Icarus Solar we measure success by the frontiers of engineering we cross. In this case our success will be determined by how well our app is integrated with our generator and its ability to output power. Additionally, we do not expect failures because we do not embrace excuses. We set out from the get go to ensure that our best product is put to market. In this case a failure would be if we fell short of our initial goal and are unable to put forth the best product we could possibly provide. For example, if we were unable to successfully generate enough power or failed to create a working app interface. The customer we aim to please is one who is searching for a source of clean energy that is portable, reliable and always available. Unlike Icarus, we do not aim to fly too close to the Sun, just close enough to harness its power and provide solutions. Some constraints that we may run into are size issues, integrability between software and hardware, charge duration or durability, among others. By the Fall, we hope to have most of the hardware designed and a basic app layout. The hardware may not be fully complete but it should be functional and the app should have minimal functionality. By the Spring, we hope to have a sleek looking product with app connectivity and controls. </p>
 		<h3>Team Members</h3>
-		<p>Jason and Shane: Work on the hardware, putting components together correctly and wiring/designing other necessary components</p>
-		<p>Michael G and Michael F: Develop the app interface and also work on connecting the software to the hardware, which will allow us to control the generator</p>
+		<p>Jason Anderson: Work on the hardware, putting components together correctly and wiring/designing other necessary components</p>
+		<p>Michael Figura: Develop the app interface and also work on connecting the software to the hardware, which will allow us to control the generator</p>
+		<p>Michael Guerrero: Develop the app interface and also work on connecting the software to the hardware, which will allow us to control the generator</p>
+		<p>Shane McGovern: Work on the hardware, putting components together correctly and wiring/designing other necessary components</p>
 		<p>Supervised by Dr. Hegedus</p>
-		<h3>Block Diagram</h3>
-		<img src="Block Diagram.png" alt="Block Diagram" width="400" height="200">
 		<h3>Link to our Github:</h3>
 		<p><a href="https://github.com/michaeli-g/IcarusSolar">Github</a></p>
 
