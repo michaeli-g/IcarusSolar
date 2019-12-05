@@ -29,17 +29,11 @@
 	}
 	.active {
 		background-color: #4CAF50;
-	}	
+	}
 	h1 {
 		color: #00539F;
 		text-align: center;
 		font-family: Trebuchet MS
-	}
-	h2 {
-	
-	}
-	h3{
-	
 	}
 	p {
 		font-family: verdana;
@@ -82,14 +76,29 @@
 
 	/* Change the background color of the dropdown button when the dropdown content is shown */
 	.dropdown:hover .dropbtn {background-color: #00539F;}
-	
+
 	p.last {
 		padding-bottom: 30px;
 	}
-	
+
 	footer {
 		border-top: 6px solid #00539F;
 		text-align: center;
+	}
+	.rotate{
+		transform: rotate(270deg);
+		width: 50%;
+		padding-right: 200px;
+	}
+	h2 {
+		color: #00539F;
+		font-family: Trebuchet MS;
+		font-size: 27px;
+	}
+	h3{
+		color: #00539F;
+		font-family: Trebuchet MS;
+		font-size: 20px;
 	}
 	</style>
 	</head>
@@ -108,7 +117,37 @@
 			</li>
 		</ul>
 		<h1>Team Progress</h1>
-		<h2>Soon to come</h2>
+		<h2>Calculations</h2>
+		<h3>1. Energy Demand</h3>
+		<p>Total energy needed 60W = 60Whr/day. Assume the device needs to be on for 4 hours of the day?? Meaning 15 Watts need to be generated per hour </p>
+		<h3>2. Amp hours per day</h3>
+		<p>Daily amp hours going through the battery is 7.14 Amp-hr/day assuming system efficiency at 70%</p>
+		<h3>3. Current to charge battery</h3>
+		<p>Lowest # of sun-hours/day for wilmington DE
+	  <p>Lat -15: 2.6</p>
+    <p>Lat: 3</p>
+		<p>Lat +15: 3.2</p>
+		<p>Current to charge batteries (7.14/3) = 2.38 A</p>
+		<h3>4. Battery Capacity</h3>
+		<p>Battery capacity Ah(b) = Ah(d) x C(d) / DOD</p>
+		<p>Ah(d) = 7.14</p>
+		<p>Assume Cloudy days is 2</p>
+		<p>When using Lithium battery all of the capacity is able to be used, although once that battery becomes more than 80% full it causes a steep drop off.</p>
+		<p>Assume 20% SOC, 80% DOD</p>
+		<p>Ah(b)= 17.85 Ah</p>
+		<p>Ideally only need 1 20Ahr batteries </p>
+		<h3>5. Array Size</h3>
+		<p>W(pv) in kW = SF*E/H(s)</p>
+	  <p>Assume Safety Factor is 1.2</p>
+		<p>Array size = 1.2*60/2 = 36W</p>
+		<p>Current Required 2.38 A</p>
+		<p>Assume I(MP) - 3.1A</p>
+		<p>1 12 volt arrays in parallel</p>
+		<h2>Schematics</h2>
+		<!--Add pictures here-->
+		<p><img src="Block Diagram.png" width="60%">
+		<img src="schematic1.png"  class="rotate">
+		<img src="schematic2.jpg"  class="rotate"></p>
 		<p class="last"></p>
 		<footer>
 		<p><a href="https://github.com/michaeli-g/IcarusSolar" target="_blank"><img src = "github.png" width="50" height="50"></a></p>
