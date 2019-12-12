@@ -124,27 +124,49 @@
 		microcontroller to use ( M5 stack,ESP32)</p>
 		<p> Oct 22-24 - Met with group and began calculating specs for the equipment necessary.This is when we decided the
 		Solar modules wattage output along with voltage that can adequately keep up with our medical device load.</p>
-		<p> Oct 28 - Talked to Professor Hegedus about inital design ideas and got feedback on adjustments to some numbers.
-		Provided a document to give us exact likely outputs for solar pannels that factor in cloudy days etc.</p>
+		<p> Oct 28 - Talked to Professor Hegedus about initial design ideas and got feedback on adjustments to some numbers.
+		Provided a document to give us exact likely outputs for solar panels that factor in cloudy days etc.</p>
 
 		<h2>Week of 10/28:</h2>
 		<p> Oct 28 - Sent out a parts list to Dr. Cotton, will meet with him and Dr. Hegedus to discuss the design for our system</p>
-		<p> Oct 31 - Met with Professor Hegedus to show him our design and gain feedpack on our calculations. We determined that a total
+		<p> Oct 31 - Met with Professor Hegedus to show him our design and gain feedback on our calculations. We determined that a total
 		energy demand of 180 Watts assuming the device can be on for 4 hours throughout the day. Along with 21.4 amp/hr per day running
-		through the battery at a system efficency of 70%. We calculated a worst case for our system not having power for 3 days(too many
+		through the battery at a system efficiency of 70%. We calculated a worst case for our system not having power for 3 days(too many
 		clouds) to show that a 100 Amp hour battery is needed. All these calculations lead use to need 7.2 amps of current required from the
 	 	array and 72 Watts. With this knowledge we will most likely look for 2 12 volt arrays in parallel to meet this need. </p>
 
 		<h2>Week of 11/04:</h2>
-		<p>
+		<p> Nov 6 - Looked online for component prices for our current design. Tried to find the best quality for a reasonable price especially
+			for the battery, as it is the most expensive part. </p>
+		<p> Nov 8 - Found websites to look through PV panel data sheets to determine the required size of the two panels to meet our required 
+			current for the system. Started to realize the large expense buying two panels would be. Only looked for panels with larger solar
+			cells out of a recommendation from Dr. Hegedus. </p>
 
 		<h2>Week of 11/11:</h2>
-
+		<p> Nov 12 - Researched the difference between MPPT and PWM charge controllers. Came to the conclusion we had more knowledge to
+			construct a PWM charge controller. </p>
+		<p> Nov 14 - Researched the different types of MOSFETS needed to interact with pwm systems to safely charge the battery. Found that 
+			using a N channel MOSFET is useful for controlling the power flow while P channel MOSFET is useful for driving the load. Wanted
+			to ensure the MOSFETS had low RDS(on) values. </p>
 
 		<h2>Week of 11/18:</h2>
 		<p> Nov 18 - Reworked calculations based off a suggestion from Professor Hegedus to make the system smaller. This will allow us to use
 		M55 Arco solar module provided by the IEC. We changed the target energy demand from 180 Watts down to 60 Watts. This changed the daily amp hours
 		down to 7.12 amp/hr per day. We would also adjust our battery capacity down to 50 ah. </p>
+		<p> Nov 21 - Sent out a final parts list to Tom Lum including pieces need for the charge controller and the M5 stack. </p>
+		
+		<h2>Week of 11/25 
+			<p> Thanksgiving break </p>
+			
+		<h2>Week of 12/2
+		<p> Dec 2 - Finished first schematic of the charge controller provided basic resistor and capacitors numbers subject to change. </p>
+		<p> Dec 3-5 - Worked on preparing and practicing my portion of the presentation on December 5th at 7 PM. </p>
+			
+		<h2>Week of 12/9
+		<p> Dec 9-11 - Gathered all the information collected throughout the semester to put into our final paper. Revised the document before
+			submission. </p>
+			
+			
 		<p class="last"></p>
 		<footer>
 		<p><a href="https://github.com/shane-mc19" target="_blank"><img src = "github.png" width="50" height="50"></a>&nbsp;&nbsp;&nbsp;
