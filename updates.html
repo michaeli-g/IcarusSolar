@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Icarus Solar</title>
+		<link rel="shortcut icon" href="icarus.ico">
+	<style>
+	body {
+		background-color: white;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #00539F;
+	}
+	li {
+		float: left;
+	}
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	li a:hover {
+		background-color: #FFD200;
+	}
+	.active {
+		background-color: #4CAF50;
+	}
+	h1 {
+		color: #00539F;
+		text-align: center;
+		font-family: Trebuchet MS
+	}
+
+  h2{
+    color: #00539F;
+    text-align: left;
+    font-family: Trebuchet MS
+  }
+	p {
+		font-family: verdana;
+		font-size: 16px;
+	}
+		/* Dropdown Button */
+	.dropbtn {
+	  background-color:  #00539F;
+	  color: white;
+	  padding: 0;
+	  font-size: 16px;
+	  border: none;
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+	  border: double;
+	  background-color: #00539F;
+	  color: white;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: #FFD200;}
+
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {display: block;}
+
+	/* Change the background color of the dropdown button when the dropdown content is shown */
+	.dropdown:hover .dropbtn {background-color: #00539F;}
+
+	p.last {
+		padding-bottom: 30px;
+	}
+
+	footer {
+		border-top: 6px solid #00539F;
+		text-align: center;
+	}
+	</style>
+	</head>
+	<body>
+		<ul>
+			<li><img align="right" src="icarus.png" alt="icarus" width="50" height="50"></li>
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+				<button class="dropbtn"><a href="peoplepage.html">Team</a></button>
+				<div class="dropdown-content">
+					<a href="michaelg.html">Michael Guerrero</a>
+					<a href="michaelf.html">Michael Figura</a>
+					<a href="jason.html">Jason Anderson</a>
+					<a href="shane.html">Shane McGovern</a>
+				</div>
+			</li>
+      <li><a href="updates.html">Updates</a></li>
+		</ul>
+		<h1>Live Updates from Adafruit.io</h1>
+
+    <h2>Source Voltage</h2>
+    <p class="v1">0.00</p>
+
+
+		<p class="last"></p>
+		<footer>
+		<p><a href="https://github.com/michaeli-g/IcarusSolar" target="_blank"><img src = "github.png" width="50" height="50"></a></p>
+		</footer>
+
+	</body>
+</html>
