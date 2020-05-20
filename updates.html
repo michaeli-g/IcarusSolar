@@ -16,6 +16,8 @@
 	}
 	li {
 		float: left;
+		font-family: Trebuchet MS;
+		font-size: 16px;
 	}
 	li a {
 		display: block;
@@ -91,7 +93,17 @@
 		border-top: 6px solid #00539F;
 		text-align: center;
 	}
+
+	#button{
+		background-color:#00539F;
+		font-size: 15px;
+		color: white;
+		padding: 15px;
+		border: none;
+		margin-left: 30px;
+	}
 	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<ul>
@@ -108,16 +120,48 @@
 			</li>
       <li><a href="updates.html">Updates</a></li>
 		</ul>
-		<h1>Live Updates from Adafruit.io</h1>
+		<h1>Current Readings from the M5Stack</h1>
 
     <h2>Source Voltage</h2>
-    <p class="v1">0.00</p>
+    <p id="vs" style="padding-left:25px;">0.00V</p>
 
+		<h2>Battery Voltage</h2>
+    <p id="bv" style="padding-left:25px;">0.00V</p>
+
+		<h2>GateVoltage</h2>
+    <p id="vg" style="padding-left:25px;">0.00V</p>
+
+		<h2>Battery Percentage</h2>
+    <p id="bp" style="padding-left:25px;">0%</p>
+		<button id="button">Update All</button>
 
 		<p class="last"></p>
 		<footer>
-		<p><a href="https://github.com/michaeli-g/IcarusSolar" target="_blank"><img src = "github.png" width="50" height="50"></a></p>
+		<p><a href="https://github.com/michaeli-g/IcarusSolar" target="_blank"><img src = "github.png" width="50" height="50"></a>
+		<a href="https://io.adafruit.com/michaelig/feeds" target="_blank"><img src = "ada.PNG" width="60" height="50"></a></p>
 		</footer>
 
+		<script>
+		$(document).ready(function(){
+				$("button").click(function(){
+					$.get("https://io.adafruit.com/api/v2/michaelig/feeds/source-voltage", function(data, status){
+						document.getElementById("vs").innerHTML = data.last_value + "V";
+			    });
+
+					$.get("https://io.adafruit.com/api/v2/michaelig/feeds/battery-percentage", function(data, status){
+						document.getElementById("bp").innerHTML = data.last_value + "%";
+			    });
+
+					$.get("https://io.adafruit.com/api/v2/michaelig/feeds/battery-voltage", function(data, status){
+						document.getElementById("bv").innerHTML = data.last_value + "V";
+			    });
+
+					$.get("https://io.adafruit.com/api/v2/michaelig/feeds/gate-voltage", function(data, status){
+						document.getElementById("vg").innerHTML = data.last_value + "V";
+			    });
+
+				});
+			});
+		</script>
 	</body>
 </html>
