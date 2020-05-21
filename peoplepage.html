@@ -16,6 +16,8 @@
 	}
 	li {
 		float: left;
+		font-family: Trebuchet MS;
+		font-size: 16px;
 	}
 	li a {
 		display: block;
@@ -87,8 +89,6 @@
 	}
 	.rotate{
 		transform: rotate(270deg);
-		width: 50%;
-		padding-right: 200px;
 	}
 	h2 {
 		color: #00539F;
@@ -100,6 +100,12 @@
 		font-family: Trebuchet MS;
 		font-size: 20px;
 	}
+	#pic{
+		display: block;
+		width: 50%;
+		margin: auto;
+	}
+
 	</style>
 	</head>
 	<body>
@@ -115,6 +121,7 @@
 					<a href="shane.html">Shane McGovern</a>
 				</div>
 			</li>
+			<li><a href="updates.html">Updates</a></li>
 		</ul>
 		<h1>Team Progress</h1>
 		<h2>Calculations</h2>
@@ -145,9 +152,12 @@
 		<p>1 12 volt arrays in parallel</p>
 		<h2>Schematics</h2>
 		<!--Add pictures here-->
-		<p><img src="Block Diagram.png" width="60%">
-		<img src="schematic1.png"  class="rotate">
-		<img src="schematic2.jpg"  class="rotate"></p>
+
+		<img src="Block Diagram.png" id="pic">
+		<img src="schematic1.png"  class="rotate" id="pic">
+		<img src="schematic2.jpg"  class="rotate" id="pic">
+
+
 		<p class="last"></p>
 		<footer>
 		<p><a href="https://github.com/michaeli-g/IcarusSolar" target="_blank"><img src = "github.png" width="50" height="50"></a></p>
